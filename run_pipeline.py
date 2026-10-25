@@ -13,7 +13,7 @@ What each step is (the model is trained and tested in 3, 4, 6 and 8):
     3 baselines    how much the split flatters it  4 experiments  E1 E3 E4 E6 E8: blocked-CV training + testing
     5 design       build the grid from the results 6 detectors   final tier models + recall error bars (-> models/)
     7 compare      default vs optimized grid       8 forward     train early / test late hold-out
-    tests          117 unit tests
+    tests          153 unit tests
 
 Everything a step prints goes to runs/<run_id>/NN_<step>.log; the numbers it produced, the settings and
 the environment go to runs/<run_id>/run.json and summary.md. See `python runs.py` to list and compare runs.

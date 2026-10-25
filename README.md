@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Smart-grid attack detection - Predictive Learning project
 
 Detect cyber-physical attacks on a substation from IEC 61850 GOOSE traffic, then use what
@@ -186,7 +185,7 @@ Full guide, VS Code setup and run tracking: **RUNNING.md**.
 ```powershell
 py -m venv .venv ; .\.venv\Scripts\Activate.ps1 ; pip install -r requirements.txt     # once
 python run_pipeline.py --smoke     # ~1 min: does everything run? numbers NOT reportable
-python run_pipeline.py             # ~5-8 min: steps 1-8 + 152 unit tests; the run is recorded in runs/
+python run_pipeline.py             # ~5-8 min: steps 1-8 + 153 unit tests; the run is recorded in runs/
 python runs.py                     # list runs;  runs.py show last | diff prev last | watch
 ```
 
@@ -201,7 +200,7 @@ python step5_design_grid.py --require-measured
 python step6_train_detectors.py            # 3 tier detectors + recall error bars (-> models/)
 python step7_compare_grids.py --require-measured --sensitivity   # default vs optimized
 python step8_forward_test.py               # train early, test late
-python -m unittest discover -s tests -v    # 152 tests
+python -m unittest discover -s tests -v    # 153 tests
 ```
 
 E4 latencies depend on the CPU: a full run on your machine re-measures them.
@@ -218,6 +217,3 @@ E4 latencies depend on the CPU: a full run on your machine re-measures them.
   there is no time-to-first-alert. The adversary is a scenario set, not a threat model. The default builders
   are one reasonable reading of "not optimized"; the budget-matched default and the control exist so the
   result is not an artefact of a weak baseline.
-=======
-# SmartGrid_Security_Optimization
->>>>>>> ea4e009b8ce8fe710b0579813478109665da5212
