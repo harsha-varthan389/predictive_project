@@ -21,8 +21,8 @@
       "n_greedy": 13,
       "method": "exact (scipy milp)",
       "fraction_of_substations": 0.3,
-      "expected_detection": 0.5757,
-      "worst_after_single_pmu_loss": 0.5757
+      "expected_detection": 0.5905,
+      "worst_after_single_pmu_loss": 0.5905
     },
     "hierarchy": {
       "k_zones": 6,
@@ -48,8 +48,8 @@
       "headroom": {
         "zone_share": "0.246 of cap 0.25",
         "zone_hops": "3 of cap 4",
-        "latency_to_hub_verdict": "462.8 ms of 1000 ms",
-        "latency_to_cc_verdict": "475.6 ms of 10000 ms",
+        "latency_to_hub_verdict": "445.5 ms of 1000 ms",
+        "latency_to_cc_verdict": "451.1 ms of 10000 ms",
         "hub_cores": "0.00 of cap 8",
         "station_cores": "0.00 of cap 8"
       },
@@ -177,51 +177,51 @@
       "e3_feature_stability.csv"
     ],
     "edge_p50_ms": [
-      3.7568499974440783,
+      1.3976870031910948,
       "e4_compute_profile.csv"
     ],
     "edge_p95_ms": [
-      4.89906498696655,
+      1.549779154083808,
       "e4_compute_profile.csv"
     ],
     "edge_batch_ms": [
-      0.04908210936264368,
+      0.022602240003379848,
       "e4_compute_profile.csv"
     ],
     "station_p50_ms": [
-      8.609099983004853,
+      2.851770997949643,
       "e4_compute_profile.csv"
     ],
     "station_p95_ms": [
-      10.495460047968663,
+      3.8131169490952725,
       "e4_compute_profile.csv"
     ],
     "station_batch_ms": [
-      0.0867277343513706,
+      0.02882300687474526,
       "e4_compute_profile.csv"
     ],
     "wide_p50_ms": [
-      8.67265000124462,
+      2.8167499986011535,
       "e4_compute_profile.csv"
     ],
     "wide_p95_ms": [
-      10.173150032642297,
+      2.931531249487307,
       "e4_compute_profile.csv"
     ],
     "wide_batch_ms": [
-      0.08629292186014936,
+      0.029136926411865716,
       "e4_compute_profile.csv"
     ],
     "det_all": [
-      0.5756825284709246,
+      0.5904643573589038,
       "e1_views_blocked.csv"
     ],
     "det_station": [
-      0.5756825284709246,
-      "e1_views_blocked.csv [capped: E1 station 0.615 > all 0.576, noise]"
+      0.5904643573589038,
+      "e1_views_blocked.csv [capped: E1 station 0.612 > all 0.590, noise]"
     ],
     "det_process": [
-      0.156292657532659,
+      0.16419701179309315,
       "e1_views_blocked.csv"
     ],
     "evidence_Bps_per_bay": [

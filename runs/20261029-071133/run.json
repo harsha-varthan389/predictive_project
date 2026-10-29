@@ -1,0 +1,272 @@
+{
+  "run_id": "20261029-071133",
+  "name": null,
+  "note": null,
+  "smoke": false,
+  "reportable": true,
+  "started": "2026-10-29T07:11:33",
+  "status": "ok",
+  "seconds": 592.3,
+  "command": "run_pipeline.py --extras",
+  "git": {
+    "commit": "c5545d7",
+    "dirty": false
+  },
+  "environment": {
+    "python": "3.11.4",
+    "platform": "macOS-26.1-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.1.0",
+      "scikit-learn": "1.9.1",
+      "xgboost": "3.2.0",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0"
+    }
+  },
+  "config": {
+    "dataset": "fb3e4aae715163c5",
+    "random_seed": 42,
+    "n_splits": 5,
+    "n_blocks": 20,
+    "model_params": {
+      "n_estimators": 300,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 1.0
+    },
+    "kstar_tolerance": 0.01,
+    "operating_fpr": 0.01,
+    "bootstrap_B": 300,
+    "ensemble_sizes": [
+      20,
+      40,
+      80
+    ],
+    "ensemble_seeds": 30,
+    "grid_assumptions": {
+      "n_sites": 40,
+      "region_km": 300.0,
+      "frac_gen": 0.2,
+      "frac_junction": 0.2,
+      "line_kusd_per_km": 1500.0,
+      "candidate_knn": 6,
+      "n1_mode": "vertex",
+      "pmu_obs_k": 1,
+      "use_zib": true,
+      "pmu_kusd": 40.0,
+      "sentinel_kusd_per_bay": 5.0,
+      "station_correlator_kusd": 30.0,
+      "hub_kusd": 120.0,
+      "cc_kusd": 400.0,
+      "fibre_kusd_per_km": 15.0,
+      "fibre_us_per_km": 5.0,
+      "hop_ms": 0.1,
+      "lan_ms": 0.2,
+      "link_capacity_Bps": 12500000.0,
+      "verdict_bytes": 64,
+      "verdict_hz": 10.0,
+      "max_zone_share": 0.25,
+      "max_zone_hops": 4,
+      "min_zone_stations": 3,
+      "max_cores_per_node": 8,
+      "util_cap": 0.7,
+      "zone_budget_ms": 1000.0,
+      "wide_budget_ms": 10000.0,
+      "hardware_slowdown": 1.0,
+      "failure_radius_km": 50.0,
+      "central_gateway_kusd_per_station": 0.0,
+      "k_zone_max": 12,
+      "pam_restarts": 6
+    },
+    "grid_assumptions_hash": "13ccc446d3",
+    "env_overrides": {}
+  },
+  "steps": [
+    {
+      "key": "profile",
+      "status": "ok",
+      "seconds": 2.1,
+      "log": "01_profile.log",
+      "metrics": {
+        "data.rows": 1094,
+        "data.row_rate_hz": 2.2936837735500943,
+        "data.merging_units": 4
+      },
+      "labels": {}
+    },
+    {
+      "key": "views",
+      "status": "ok",
+      "seconds": 0.4,
+      "log": "02_views.log",
+      "metrics": {},
+      "labels": {}
+    },
+    {
+      "key": "baselines",
+      "status": "ok",
+      "seconds": 80.4,
+      "log": "03_baselines.log",
+      "metrics": {
+        "split.all.blocked_cv_macro_f1": 0.7286880361,
+        "split.all.shuffled_cv_macro_f1": 0.7816976896,
+        "split.all.published_train_to_test_macro_f1": 0.9885835237,
+        "split.station.blocked_cv_macro_f1": 0.7191680389,
+        "split.station.shuffled_cv_macro_f1": 0.8123731925,
+        "split.station.published_train_to_test_macro_f1": 0.9831178903,
+        "split.process.blocked_cv_macro_f1": 0.3026187268,
+        "split.process.shuffled_cv_macro_f1": 0.2926596529,
+        "split.process.published_train_to_test_macro_f1": 1.0
+      },
+      "labels": {}
+    },
+    {
+      "key": "experiments",
+      "status": "ok",
+      "seconds": 249.3,
+      "log": "04_experiments.log",
+      "metrics": {
+        "e1.process.macro_f1": 0.302618726762167,
+        "e1.process.macro_f1_sd": 0.023787063402125823,
+        "e1.process.attack_coverage": 0.16419701179309315,
+        "e1.goose.macro_f1": 0.6329425092543157,
+        "e1.goose.macro_f1_sd": 0.040505042243292294,
+        "e1.goose.attack_coverage": 0.6348037639038188,
+        "e1.consistency.macro_f1": 0.4954562400813799,
+        "e1.consistency.macro_f1_sd": 0.022076027995214104,
+        "e1.consistency.attack_coverage": 0.3226221257052309,
+        "e1.relay.macro_f1": 0.2530843813132625,
+        "e1.relay.macro_f1_sd": 0.038159084670444814,
+        "e1.relay.attack_coverage": 0.01613536947879816,
+        "e1.station.macro_f1": 0.7191680389299973,
+        "e1.station.macro_f1_sd": 0.02529623869827931,
+        "e1.station.attack_coverage": 0.6124382902942707,
+        "e1.all.macro_f1": 0.7286880361250233,
+        "e1.all.macro_f1_sd": 0.03624591156868316,
+        "e1.all.attack_coverage": 0.5904643573589038,
+        "e1.control_time_only.macro_f1": 0.17344979555132922,
+        "e1.control_time_only.macro_f1_sd": 0.036926059851234073,
+        "e1.control_time_only.attack_coverage": 0.358458609293151,
+        "e1.control_counters_only.macro_f1": 0.23907115676013585,
+        "e1.control_counters_only.macro_f1_sd": 0.09173672007138636,
+        "e1.control_counters_only.attack_coverage": 0.28477971180280126,
+        "e1.all.recall_Normal": 0.8818368105324627,
+        "e1.all.recall_Fault": 0.9714285714285715,
+        "e1.all.recall_Masquerade": 0.9389661685708605,
+        "e1.all.recall_Injection": 0.43385642135642133,
+        "e1.all.recall_Replay": 0.3985704821494295,
+        "e3.k_star": 8,
+        "e3.stable_features": 6,
+        "e6.recall_at_2000_false_alerts_per_day": 0.7859531772575251,
+        "e8.mean_gap_all": 0.2462833462187528,
+        "e4.tier2_zone_fused.p95_ms": 2.8760666489688447,
+        "e4.tier3_widearea_fused.p95_ms": 2.8357160539599136,
+        "e4.tier1_edge_kstar.p95_ms": 1.4332976013974985,
+        "e4.tier1_edge_process_only.p95_ms": 1.9420857544901082
+      },
+      "labels": {}
+    },
+    {
+      "key": "design",
+      "status": "ok",
+      "seconds": 13.1,
+      "log": "05_design.log",
+      "metrics": {
+        "design.lines": 47,
+        "design.n1_premium_pct": 30.1,
+        "design.pmus": 12,
+        "design.zones": 6,
+        "design.levels": 4,
+        "design.total_cost_kusd": 3081619.6
+      },
+      "labels": {
+        "design.feasible": "True"
+      }
+    },
+    {
+      "key": "detectors",
+      "status": "ok",
+      "seconds": 32.7,
+      "log": "06_detectors.log",
+      "metrics": {
+        "detectors.sentinel.coverage": 0.6263153519382165,
+        "detectors.sentinel.coverage_lo": 0.5507501200305629,
+        "detectors.sentinel.coverage_hi": 0.6938572244099871,
+        "detectors.station.coverage": 0.5280805712813095,
+        "detectors.station.coverage_lo": 0.470020193006132,
+        "detectors.station.coverage_hi": 0.6098713305757516,
+        "detectors.fused.coverage": 0.5796043760547339,
+        "detectors.fused.coverage_lo": 0.5384538908037857,
+        "detectors.fused.coverage_hi": 0.6708199754837072
+      },
+      "labels": {}
+    },
+    {
+      "key": "compare",
+      "status": "ok",
+      "seconds": 136.2,
+      "log": "07_compare.log",
+      "metrics": {
+        "compare.vs_naive.cov_delivered_single.optimized": 0.5886009863813861,
+        "compare.vs_naive.cov_delivered_single.default": 0.47010294413743403,
+        "compare.vs_naive.cov_delivered_n2_targeted.optimized": 0.5550521289470159,
+        "compare.vs_naive.cov_delivered_n2_targeted.default": 0.12313651221187559,
+        "compare.vs_naive.cov_delivered_worst.optimized": 0.45899684554090275,
+        "compare.vs_naive.cov_delivered_worst.default": 0.0,
+        "compare.vs_naive.spof_total.optimized": 0.0,
+        "compare.vs_naive.spof_total.default": 79.27777777777777,
+        "compare.vs_naive.cost_total_kusd.optimized": 3616091.900000001,
+        "compare.vs_naive.cost_total_kusd.default": 2697853.066666667,
+        "compare.vs_budget-matched.cov_delivered_single.optimized": 0.5886009863813861,
+        "compare.vs_budget-matched.cov_delivered_single.default": 0.5576948413695028,
+        "compare.vs_budget-matched.cov_delivered_n2_targeted.optimized": 0.5550521289470159,
+        "compare.vs_budget-matched.cov_delivered_n2_targeted.default": 0.37323645329699423,
+        "compare.vs_budget-matched.cov_delivered_worst.optimized": 0.45899684554090275,
+        "compare.vs_budget-matched.cov_delivered_worst.default": 0.0,
+        "compare.vs_budget-matched.spof_total.optimized": 0.0,
+        "compare.vs_budget-matched.spof_total.default": 48.32222222222222,
+        "compare.vs_budget-matched.cost_total_kusd.optimized": 3616091.900000001,
+        "compare.vs_budget-matched.cost_total_kusd.default": 3579907.12
+      },
+      "labels": {
+        "compare.vs_naive": "OPTIMIZED BETTER",
+        "compare.vs_budget-matched": "OPTIMIZED BETTER",
+        "compare.vs_bm-lines+tiered": "OPTIMIZED BETTER (narrow)"
+      }
+    },
+    {
+      "key": "forward",
+      "status": "ok",
+      "seconds": 34.3,
+      "log": "08_forward.log",
+      "metrics": {
+        "forward.sentinel.test_coverage": 0.5280727155727156,
+        "forward.sentinel.test_fpr": 0.01639344262295082,
+        "forward.station.test_coverage": 0.27212033462033464,
+        "forward.station.test_fpr": 0.01639344262295082,
+        "forward.fused.test_coverage": 0.49324324324324326,
+        "forward.fused.test_fpr": 0.03278688524590164,
+        "forward.all.macro_f1": 0.5409175385301133,
+        "forward.station.macro_f1": 0.5577646321686569,
+        "forward.process.macro_f1": 0.2598300868213912
+      },
+      "labels": {}
+    },
+    {
+      "key": "tests",
+      "status": "ok",
+      "seconds": 43.8,
+      "log": "09_tests.log",
+      "metrics": {
+        "tests.ran": 153
+      },
+      "labels": {
+        "tests.result": "OK"
+      }
+    }
+  ]
+}

@@ -41,62 +41,62 @@
     },
     {
       "name": "edge_p50_ms",
-      "value": 3.7568499974440783,
+      "value": 1.3976870031910948,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "edge_p95_ms",
-      "value": 4.89906498696655,
+      "value": 1.549779154083808,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "edge_batch_ms",
-      "value": 0.04908210936264368,
+      "value": 0.022602240003379848,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "station_p50_ms",
-      "value": 8.609099983004853,
+      "value": 2.851770997949643,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "station_p95_ms",
-      "value": 10.495460047968663,
+      "value": 3.8131169490952725,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "station_batch_ms",
-      "value": 0.0867277343513706,
+      "value": 0.02882300687474526,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "wide_p50_ms",
-      "value": 8.67265000124462,
+      "value": 2.8167499986011535,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "wide_p95_ms",
-      "value": 10.173150032642297,
+      "value": 2.931531249487307,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "wide_batch_ms",
-      "value": 0.08629292186014936,
+      "value": 0.029136926411865716,
       "provenance": "e4_compute_profile.csv"
     },
     {
       "name": "det_all",
-      "value": 0.5756825284709246,
+      "value": 0.5904643573589038,
       "provenance": "e1_views_blocked.csv"
     },
     {
       "name": "det_station",
-      "value": 0.5756825284709246,
-      "provenance": "e1_views_blocked.csv [capped: E1 station 0.615 > all 0.576, noise]"
+      "value": 0.5904643573589038,
+      "provenance": "e1_views_blocked.csv [capped: E1 station 0.612 > all 0.590, noise]"
     },
     {
       "name": "det_process",
-      "value": 0.156292657532659,
+      "value": 0.16419701179309315,
       "provenance": "e1_views_blocked.csv"
     },
     {

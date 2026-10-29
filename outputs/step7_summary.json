@@ -1,17 +1,13 @@
 {
   "naive": {
-    "overall": "NOT ESTABLISHED",
-    "reasons": [
-      "1 performance metric(s) are worse"
-    ],
-    "text": "vs naive: NOT ESTABLISHED. Security outcomes: 5 better / 0 tie / 0 worse / 0 inconclusive of 5. Security objectives: 5 better / 0 tie / 0 worse / 0 inconclusive of 5. Performance: 0 better / 2 tie / 1 worse / 0 inconclusive of 3. The optimized grid costs +37% more. Because: 1 performance metric(s) are worse."
+    "overall": "OPTIMIZED BETTER",
+    "reasons": [],
+    "text": "vs naive: OPTIMIZED BETTER. Security outcomes: 5 better / 0 tie / 0 worse / 0 inconclusive of 5. Security objectives: 5 better / 0 tie / 0 worse / 0 inconclusive of 5. Performance: 0 better / 3 tie / 0 worse / 0 inconclusive of 3. The optimized grid costs +37% more."
   },
   "budget-matched": {
-    "overall": "NOT ESTABLISHED",
-    "reasons": [
-      "1 performance metric(s) are worse"
-    ],
-    "text": "vs budget-matched: NOT ESTABLISHED. Security outcomes: 5 better / 0 tie / 0 worse / 0 inconclusive of 5. Security objectives: 5 better / 0 tie / 0 worse / 0 inconclusive of 5. Performance: 0 better / 2 tie / 1 worse / 0 inconclusive of 3. The optimized grid costs about the same. Because: 1 performance metric(s) are worse."
+    "overall": "OPTIMIZED BETTER",
+    "reasons": [],
+    "text": "vs budget-matched: OPTIMIZED BETTER. Security outcomes: 5 better / 0 tie / 0 worse / 0 inconclusive of 5. Security objectives: 5 better / 0 tie / 0 worse / 0 inconclusive of 5. Performance: 0 better / 3 tie / 0 worse / 0 inconclusive of 3. The optimized grid costs about the same."
   },
   "bm-lines+tiered": {
     "overall": "OPTIMIZED BETTER (narrow)",
@@ -29,16 +25,16 @@
       "overall": "NOT ESTABLISHED",
       "counts": {
         "default better": 10,
-        "tie": 2,
-        "optimized better": 2
+        "tie": 3,
+        "optimized better": 1
       }
     }
   },
   "inputs": {
     "dataset": "fb3e4aae715163c5",
     "operating_fpr": 0.01,
-    "recall_station": 0.5432022243335861,
-    "recall_fused": 0.5645467311961615,
+    "recall_station": 0.5394946501668451,
+    "recall_fused": 0.5894425512581564,
     "layouts": 90,
     "sizes": [
       20,
