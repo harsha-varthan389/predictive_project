@@ -24,3 +24,9 @@ runs/*/outputs/
 runs/index.csv
 mlflow.db
 mlartifacts/
+
+# Staged-but-unwired second dataset, abandoned dataset, scratch cache, doc duplicates
+dataset/PowerSystem/
+dataset/_old_ieee_dataport/
+outputs/cache/
+materials/
